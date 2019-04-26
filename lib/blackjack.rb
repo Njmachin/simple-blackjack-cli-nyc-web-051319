@@ -31,15 +31,19 @@ end
 def hit?(num)
   prompt_user
   choice = get_user_input
-  if choice == 's'
-  elsif choice == 'h'
-  num += deal_card
+  if choice == 's'|| choice == 'h'
+    if choice == 'h'
+      num += deal_card
+    end
+  else
+    invalid_command
+    hit?(num)
+  end
   display_card_total(num)
 end
 
 def invalid_command
   puts "Please enter a valid command"
-  
 end
 
 #####################################################
