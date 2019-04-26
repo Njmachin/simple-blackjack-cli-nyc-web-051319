@@ -34,14 +34,12 @@ def hit?(num)
   if choice == 's'
   elsif choice == 'h'
   num += deal_card
-  else
-    invalid_command
-  end
   display_card_total(num)
 end
 
 def invalid_command
-  puts 
+  puts "Please enter a valid command"
+  
 end
 
 #####################################################
