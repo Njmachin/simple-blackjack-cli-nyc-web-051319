@@ -40,6 +40,7 @@ def hit?(num)
     hit?(num)
   end
   display_card_total(num)
+  
 end
 
 def invalid_command
