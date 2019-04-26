@@ -39,7 +39,7 @@ def hit?(num)
     invalid_command
     hit?(num)
   end
-  display_card_total(num)
+  num
 end
 
 def invalid_command
